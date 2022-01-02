@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-
+# My app has been deployed at : https://sentimentproductrecommendatio.herokuapp.com/
 
 import pandas as pd
 user_final_rating = pd.read_csv("user_final_rating.csv",index_col='reviews_username')
