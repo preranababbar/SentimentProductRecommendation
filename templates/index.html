@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="container">
+    <h1 class="title">
+      Sentiment Based <span>Product Recommendation</span> System
+    </h1>
+    <form action="/result" method="POST" class="main">
+      <h2 class="text">Enter <span>Username</span></h2>
+      <input type="text" class="username-input" name="username" />
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    {% if message %}
+    <div class="error">
+        {{ message }}
+    </div>
+    {% endif %}
+  </body>
+</html>
